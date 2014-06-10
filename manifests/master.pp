@@ -24,6 +24,7 @@ class puppet::master (
     }
   }
 
+  include apache
   include apache::mod::ssl
   include passenger
   include puppet::lint
